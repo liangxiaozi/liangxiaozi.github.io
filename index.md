@@ -16,7 +16,7 @@ policy research and knowledge products, and the design/operation of internationa
 
 </div>
 
-<div class="section" id="experience">
+<div class="section" id="experience" markdown="1">
 
 ## Working Experience
 
@@ -43,7 +43,7 @@ policy research and knowledge products, and the design/operation of internationa
 
 </div>
 
-<div class="section" id="education">
+<div class="section" id="education" markdown="1">
 
 ## Education
 
@@ -69,7 +69,7 @@ Tsinghua University International Case Analysis Prize
 
 </div>
 
-<div class="section" id="publication">
+<div class="section" id="publication" markdown="1">
 
 ## Publication
 
@@ -78,7 +78,7 @@ Tang, B. & Liang, X. “The Institutionalization of ASEAN Public Health Cooperat
 
 </div>
 
-<div class="section" id="skills">
+<div class="section" id="skills" markdown="1">
 
 ## Skills
 
