@@ -39,7 +39,7 @@ policy research and knowledge products, and the design/operation of internationa
 
 <h3>Specialist for Youth-Responsive Security Sector Reform · UN Department of Peace Operations</h3>
 
-<img src="/assets/images/un-dpo.svg"
+<img src="/asset/image/UN.svg"
      alt="UN Department of Peace Operations"
      class="item-logo">
 
