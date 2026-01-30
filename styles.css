@@ -54,14 +54,16 @@ h1{
 }
 
 .contact{
-  margin:0;
-  color:var(--muted);
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
+  margin: 0;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;   /* 关键：纵向排列 */
+  gap: 4px;
 }
 
-.sep{ opacity:.6 }
+.sep{
+  display: none;
+}
 
 /* ================= Navigation ================= */
 .nav{
