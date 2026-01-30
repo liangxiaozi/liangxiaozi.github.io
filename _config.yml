@@ -1,0 +1,10 @@
+name: Xiao Liang
+subtitle: International Cooperation · Policy Research · AI Governance
+email: leonidminor0821@gmail.com
+phone_label: Phone/WeChat/WhatsApp
+phone: "+86 15380890906"
+cv_pdf: cv.pdf
+
+markdown: kramdown
+kramdown:
+  input: GFM
