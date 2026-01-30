@@ -4,8 +4,6 @@ title: Xiao Liang | CV
 description: Xiao Liang - International Cooperation | Policy Research | AI Governance
 ---
 
-<div class="card" id="profile">
-
 ## Profile
 
 Professional with an interdisciplinary background spanning international organizations, government advisory,
@@ -13,10 +11,6 @@ and international development, with a sustained focus on inter-agency coordinati
 policy research and knowledge products, and the design/operation of international cooperation mechanisms and online workspaces.
 
 <span class="muted">Gallup CliftonStrengths: Context, Restorative, Learning, Focus, Arranger</span>
-
-</div>
-
-<div class="card" id="experience">
 
 ## Working Experience
 
@@ -41,10 +35,6 @@ policy research and knowledge products, and the design/operation of internationa
 - Supported YRSSR agenda through policy research, database management, and secretariat support.
 - **Policy Database Development:** Collected and analyzed 113 policy documents via web scraping and text analysis; defined 14 core attributes and produced gap analysis and visualizations.
 
-</div>
-
-<div class="card" id="education">
-
 ## Education
 
 ### Master of Public Policy (Honor) · University of Chicago  
@@ -60,18 +50,10 @@ policy research and knowledge products, and the design/operation of internationa
 
 <span class="muted">Award/Certification: National Legal Professional Qualification (Chinese Bar); Tsinghua University International Case Analysis Prize</span>
 
-</div>
-
-<div class="card" id="publication">
-
 ## Publication
 
 Tang, B. & Liang, X. “The Institutionalization of ASEAN Public Health Cooperation and Its Characteristics”,  
 <i>Southeast Asia Affairs</i> (CSSCI), 2020, vol. 4, pp. 1–11.
-
-</div>
-
-<div class="card" id="skills">
 
 ## Skills
 
@@ -80,5 +62,3 @@ R, Python, Stata, PowerBI, QGIS/ArcGIS, Data Visualization, Machine Learning, Te
 
 ### Languages
 Chinese (native), English (professional working proficiency)
-
-</div>
