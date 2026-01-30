@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title | default: "Xiao Liang | CV" }}</title>
+  <meta name="description" content="{{ page.description | default: 'Xiao Liang - International Cooperation | Policy Research | AI Governance' }}" />
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+</head>
+<body>
+  <header class="container header">
+    <div>
+      <h1>{{ site.name | default: "Xiao Liang" }}</h1>
+      <p class="subtitle">{{ site.subtitle | default: "International Cooperation · Policy Research · AI Governance" }}</p>
+      <p class="contact">
+        <span>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+        <span class="sep">·</span>
+        <span>{{ site.phone_label | default: "Phone/WeChat/WhatsApp" }}: {{ site.phone }}</span>
+      </p>
+    </div>
+
+    <nav class="nav">
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#publication">Publication</a>
+      <a href="#skills">Skills</a>
+      <a class="nav-cta" href="{{ site.cv_pdf | default: 'cv.pdf' }}" target="_blank" rel="noopener">Download PDF</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    {{ content }}
+
+    <footer class="footer">
+      <span class="muted">Last updated: {{ site.time | date: "%b %d, %Y" }}</span>
+    </footer>
+  </main>
+</body>
+</html>
