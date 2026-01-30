@@ -110,61 +110,52 @@ a{ color:var(--link) }
   font-size:13px;
 }
 
-/* ================= Markdown → Card Layout ================= */
-/*
-  每一个 ## 作为一个“卡片头”
-  后续内容作为“卡片体”
-*/
-
-main.container h2{
-  margin:28px 0 0;
-  padding:16px 18px 10px;
-  font-size:18px;
-  letter-spacing:.3px;
+/* ================= Section Cards (Markdown-friendly) ================= */
+/* 你现在的 index.md 用的是 <div class="section" id="..."> 包裹每个模块 */
+.section{
   background:rgba(15,22,32,.85);
   border:1px solid var(--line);
-  border-bottom:none;
-  border-radius:14px 14px 0 0;
+  border-radius:14px;
+  padding:18px;
+  margin:18px 0;
   box-shadow:0 10px 30px rgba(0,0,0,.25);
-  scroll-margin-top:92px;
 }
 
-/* 卡片正文（直到下一个 h2 之前） */
-main.container h2 + *{
-  background:rgba(15,22,32,.85);
-  border-left:1px solid var(--line);
-  border-right:1px solid var(--line);
-  padding:0 18px;
+/* section title */
+.section > h2{
+  margin:0 0 10px;
+  font-size:18px;
+  letter-spacing:.3px;
+  scroll-margin-top:92px; /* 配合顶部导航跳转不被遮挡 */
 }
 
-main.container h2 + *:last-child{
-  border-bottom:1px solid var(--line);
-  border-radius:0 0 14px 14px;
-  padding-bottom:16px;
-}
-
-/* 处理 Markdown 中的 h3（职位 / 学校） */
-main.container h3{
+/* subheadings (roles/schools) */
+.section > h3{
   margin:16px 0 6px;
   font-size:15.5px;
 }
 
-/* meta 行 */
-main.container .meta{
+/* make the date line look like a meta line */
+.section .meta{
   display:inline-block;
   margin:0 0 8px;
 }
 
-/* 列表 */
-main.container ul{
+/* lists */
+.section ul{
   margin:8px 0 0 18px;
 }
 
-main.container li{
+.section li{
   margin:6px 0;
 }
 
-/* Skills 两列 */
+/* optional: make paragraphs inside card breathe */
+.section p{
+  margin:10px 0;
+}
+
+/* Skills grid (你如果后面想恢复两列，可以在 md 里继续用 <div class="grid">...) */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
