@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "梁潇 - 简历"
 title: Xiao Liang | CV
 description: Xiao Liang - International Cooperation | Policy Research | AI Governance
 ---
