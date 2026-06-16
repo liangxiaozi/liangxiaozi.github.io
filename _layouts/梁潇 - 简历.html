@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>梁潇 - 简历</title>
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #667085;
+      --line: #d8e6f7;
+      --soft: #f3f8ff;
+      --accent: #0169CC;
+      --accent-2: #0169CC;
+      --paper: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eef5fd;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.58;
+    }
+
+    .page {
+      width: min(1040px, calc(100% - 32px));
+      margin: 28px auto;
+      background: var(--paper);
+      box-shadow: 0 18px 55px rgba(1, 105, 204, 0.11);
+      border: 1px solid rgba(216, 222, 232, 0.9);
+    }
+
+    .resume {
+      padding: 42px 48px 46px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.05;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    .headline {
+      margin-top: 10px;
+      color: var(--accent-2);
+      font-size: 15px;
+      font-weight: 650;
+    }
+
+    .keywords {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+      max-width: none;
+      white-space: nowrap;
+    }
+
+    .intro {
+      margin: 22px 0 18px;
+      padding: 18px 20px;
+      border-left: 5px solid var(--accent);
+      background: var(--soft);
+      font-size: 14.5px;
+    }
+
+    .intro-label {
+      margin-bottom: 6px;
+      color: var(--accent);
+      font-weight: 760;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-top: 24px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 17px;
+      font-weight: 760;
+    }
+
+    .section-title::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: var(--line);
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 14px;
+    }
+
+    .skill-card {
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      background: #fbfcfe;
+    }
+
+    .skill-card strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--accent-2);
+      font-size: 13.5px;
+    }
+
+    .skill-card span {
+      display: block;
+      color: #3d4b5c;
+      font-size: 13px;
+    }
+
+    .item {
+      margin-top: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(216, 222, 232, 0.65);
+    }
+
+    .item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+
+    .role {
+      font-weight: 750;
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    .meta {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-size: 12.5px;
+      white-space: nowrap;
+    }
+
+    .desc {
+      margin: 4px 0 6px;
+      color: #465669;
+      font-size: 13.3px;
+    }
+
+    ul {
+      margin: 6px 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 4px 0;
+      font-size: 13.25px;
+    }
+
+    li::marker {
+      color: var(--accent);
+    }
+
+    .project-list .item {
+      padding-left: 14px;
+      border-left: 3px solid rgba(1, 105, 204, 0.24);
+      border-bottom: 0;
+      background: linear-gradient(90deg, rgba(1, 105, 204, 0.055), rgba(255, 255, 255, 0));
+      padding-top: 2px;
+    }
+
+    .compact-list {
+      columns: 2;
+      column-gap: 28px;
+      padding-left: 18px;
+    }
+
+    .compact-list li {
+      break-inside: avoid;
+    }
+
+    .pubs li,
+    .tools li {
+      font-size: 13.2px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: auto;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .resume {
+        padding: 20mm 18mm;
+      }
+
+      .section,
+      .item {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .resume {
+        padding: 28px 22px 34px;
+      }
+
+      header,
+      .skill-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .keywords {
+        text-align: left;
+        max-width: none;
+      }
+
+      .item-head {
+        display: block;
+      }
+
+      .meta {
+        display: block;
+        margin-top: 2px;
+        white-space: normal;
+      }
+
+      .compact-list {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="resume">
+      <header>
+        <div>
+          <h1>梁潇</h1>
+        </div>
+        <div class="keywords">克利夫顿职业优势关键词：回顾、排难、学习、专注、统筹</div>
+      </header>
+
+      <section class="intro" aria-label="个人简介">
+        <div class="intro-label">个人简介</div>
+        具备国际组织、国内外政府咨询与AI产业服务交叉背景，专注产业研究、策略分析、企业解决方案设计，支持多利益相关方协同项目管理，具备中英文报告写作、数据分析、国际平台运营和业务需求转化经验。现聚焦企业AI转型、企业出海与产业生态合作，能够将复杂业务议题转化为可执行的研究框架、合作机制和交付物。
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">核心能力：</h2>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <strong>AI产业咨询与企业服务：</strong>
+            <span>围绕企业AI转型、业务出海场景识别需求，设计研究框架、服务包和项目转化路径。</span>
+          </div>
+          <div class="skill-card">
+            <strong>政策与市场研究：</strong>
+            <span>交付政策研究、产业分析和咨询报告，能够将技术、产业和监管议题转化为结构化决策建议，专报曾得到中央政治局常委批示。</span>
+          </div>
+          <div class="skill-card">
+            <strong>项目管理：</strong>
+            <span>统筹政府、国际组织、企业、科研机构和专业服务机构等多方资源，推动复杂项目落地。</span>
+          </div>
+          <div class="skill-card">
+            <strong>循证决策：</strong>
+            <span>熟练掌握主流AI和编程工具；擅长将定量证据嵌入分析，支持项目评估、风险研判与决策制定。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">教育背景</h2>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">芝加哥大学｜公共政策硕士(荣誉学位) (GPA: 3.9/4.0)</div>
+            <div class="meta">美国芝加哥｜2022年9月至2024年6月</div>
+          </div>
+          <ul>
+            <li>研究方向：政治经济学（学术顾问：2024年诺贝尓经济学奖得主James A. Robinson）、数据分析</li>
+            <li>课程：计量经济学、项目评估、机器学习；AI公共政策应用、能源政策、核政策、量化安全研究等</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">上海外国语大学｜国际政治硕士 (GPA: 3.84/4.0)</div>
+            <div class="meta">中国上海｜2021年9月至2024年6月</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">上海外国语大学｜法学学士(荣誉学位) (GPA: 3.87/4.0)</div>
+            <div class="meta">中国上海｜2017年9月至2021年6月</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">工作经验</h2>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">上海人工智能研究院｜全球工业人工智能联盟卓越中心 项目主管</div>
+            <div class="meta">中国上海｜2025年3月至今</div>
+          </div>
+          <p class="desc">上海市人工智能产业新型研发机构，承担国内外AI产业合作平台功能，包括专业智库、产业转化和产业生态。</p>
+          <ul>
+            <li>职责：建设全球AI卓越中心的企业服务能力，围绕企业AI转型和AI企业服务两大方向设计业务框架、合作机制、工作范围和实施路径，实操阳光新能源、平安产险、世界人工智能大会等企业合作项目落地</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">仲量联行(JLL)｜战略顾问部 顾问</div>
+            <div class="meta">中国上海｜2023年6月至2025年3月</div>
+          </div>
+          <p class="desc">美国财富500强咨询企业，提供涵盖商业咨询、大宗交易、资本市场等专业服务。</p>
+          <ul>
+            <li>职责：聚焦中国市场的区域经济规划、市场定位和政策研究。为跨国主体提供数据驱动的市场洞察和策略建议，撰写面向LVS等跨国企业战略部门和上海市政府的中英文咨询报告</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">联合国秘书处｜和平行动部 安全部门与青年事务专员</div>
+            <div class="meta">美国纽约｜2022年12月至2023年6月</div>
+          </div>
+          <p class="desc">协助会员国和维护国际和平与安全，向世界各地的联合国维和行动提供政治和行政领导。</p>
+          <ul>
+            <li>职责：负责“青年响应性安全部门改革”项目、数据库管理和政策研究，推动联合国青年与安全议程进展</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section project-list">
+        <h2 class="section-title">项目经历</h2>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">全球AI卓越中心企业服务体系建设</div>
+          </div>
+          <ul>
+            <li><strong>业务设计：</strong>围绕全球工业AI卓越中心的平台功能，设计面向AI转型需求企业和AI技术企业的“会客厅+加速器”双定位，通过需求拆解串联国内外需求侧与技术供给侧，实现商业项目来源可持续拓展。</li>
+            <li><strong>路径验证：</strong>整合AI出海服务包（含合规、渠道、专业服务商等）、国际传播等标准化服务方向；集成算力底座、多模态大模型、具身智能、企业智能体等AI能力谱系，提供定制化的企业整体或主营业务转型解决方案</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">阳光新能源AI光伏组件项目</div>
+          </div>
+          <ul>
+            <li><strong>解决方案：</strong>聚焦两类优先场景设计转型方案：一是基于组件/组串级运行数据，实现隐裂、热斑、异常衰减等问题的提前识别；二是结合气象数据，提升发电出力预测能力，增强业主收益管理、电网调度协同和运维决策支撑</li>
+            <li><strong>智能光伏组件技术白皮书：</strong>围绕智能组件的产业化表达，梳理数据采集、状态诊断、异常识别、出力预测、智能运维和电网友好协同等核心能力，支持将光伏组件升级为“可观、可测、可调、可控”的智能能源资产单元</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">平安产险具身智能创新产品项目</div>
+          </div>
+          <ul>
+            <li><strong>产品共创：</strong>围绕AI产业风险识别、可保性评估设计联合研究和服务机制，重点聚焦具身智能、服务机器人等新兴场景中的设备运行、算法责任、数据安全等风险点；推动建立AI+保险联合实验室，支持构建具身智能保险产品的风险因子、可保性判断、定价辅助框架，就具身智能行业报告、风险指数、创新条款等形成项目方案</li>
+            <li><strong>风险减量：</strong>围绕已投保企业在智能制造等场景中的安全生产、设备故障、质量波动、供应链中断和出海合规等风险，探索以AI技术赋能风险减量的服务模式，将保险服务从事后理赔延伸至事前识别、过程监测和主动干预。</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">拉斯维加斯金沙集团（LVS）海南市场研究项目</div>
+          </div>
+          <ul>
+            <li><strong>市场分析：</strong>对海南旅游和商业市场的现状研究与未来判断，通过40+政策文件/25+访谈/65+研究报告洞察消费供需关系和市场表现，识别评估商科教文体项目在海南的战略开发机会，形成230+页全英文报告</li>
+            <li><strong>案例研究：</strong>以同为国内旅客导向的黄金海岸为国际案例，重点分析城市间的旅游发展阶段、经济驱动模式、产业结构，建议从国际IP、产业多元化、城市活动角度切入提升海南经济韧性，向集团投资部及海南省政府汇报</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">金光集团上海城市更新项目</div>
+          </div>
+          <ul>
+            <li><strong>深度调研：</strong>多次前往项目所在地块实地踏勘，对上海市区两级规划部门、文保部门、外滩投资集团等进行访谈，设计并收集100+企业租户代表问卷，梳理分析40+相关规划/政策文件和30+潜在业态方向的国际案例</li>
+            <li><strong>定位咨询：</strong>从单元规划、建筑场地条件、更新实施路径、财务匡算和问卷分析5个维度对项目更新适配度进行评估，提出具备经济/行政可行性的开发策略建议，形成100+页中英双语报告，向大中华区CEO及黄浦区政府汇报</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">上海市商委国际消费中心城市比较研究项目</div>
+          </div>
+          <ul>
+            <li><strong>算法设计：</strong>独立研究50+英文文献，选取并优化反映城市消费行业发展的4个一级维度和22个二级指标，构建具有国际可比性的多维度样本城市评价体系，建立2021-2024年城市消费面板数据，撰写报告累计字数70000+</li>
+            <li><strong>数据分析与可视化：</strong>充分利用政府公报、研究报告、合作伙伴等多语渠道收集城市面板数据，利用QGIS挖掘空间相关POI，使用R进行数据清洗、分析及可视化，通过趋势图、相关性分析等方法识别城市消费行业变化</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="role">联合国“青年响应性安全部门改革”政策数据库</div>
+          </div>
+          <ul>
+            <li><strong>数据库搭建：</strong>通过爬虫和R文本分析，收集整理113份涉及青年参与安全部门改革的政策文件，梳理得出14类文件属性，对5项关键文本属性(安全领域、青年参与方式等)进行重点统计，以可视化形式向部门负责人展示</li>
+            <li><strong>差距分析：</strong>梳理分析各层级青年响应性安全部门改革的现状，厘清与规范要求的差距，提议在联合国地方机构建立项目评估体系以实时追踪项目进度，推动会员国政府和其他联合国实体将青年响应性任务纳入授权范围</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">发表</h2>
+        <ul class="pubs">
+          <li>World Health Organization. <em>Framework for a public health emergency operations centre</em>, second edition, 2026.</li>
+          <li>汤蓓, 梁潇. 东盟公共卫生合作的制度化路径与特点[J]. 南洋问题研究(CSSCI), 2020(04): 1-11.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">技能</h2>
+        <ul class="compact-list tools">
+          <li>AI工具：熟练运用ChatGPT/Claude等主流LLM进行 Prompt/Harness Engineering，利用Agent提升工作、编程效率</li>
+          <li>数据与分析：精通R、Python、PowerBI、GitHub、GIS工具，及数据可视化、机器学习、数据建模、文本分析等技能</li>
+          <li>专业资质：中国国家统一法律职业资格</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
