@@ -125,3 +125,22 @@ footer p>span { margin:0 5px; }
 @media(max-width:400px) { .currently { gap:10px; } .currently-card { padding:12px; } .currently-card h2 { font-size:14px; } }
 
 .currently-comment { font-size:11px; line-height:1.85; color:#637084; margin-bottom:17px; overflow-wrap:anywhere; }
+
+/* Cover-led reading and game cards. */
+.currently { gap:22px; }
+.currently-card { background:#fff; border:1px solid #d7dfe9; border-radius:10px; padding:15px; box-shadow:0 5px 18px #19385a0d; }
+.currently-label { margin-bottom:13px; }
+.currently-cover { display:flex; align-items:center; justify-content:center; height:185px; background:#eef2f7; border-radius:5px; padding:12px; overflow:hidden; }
+.currently-cover img { display:block; width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; box-shadow:2px 4px 9px #1429422b; }
+.currently-card h2 { margin-top:14px; font-size:16px; }
+.currently-comment { color:#566578; }
+.currently-card:focus-within { border-color:var(--blue); }
+@media(max-width:1100px) { .currently-cover { height:205px; } }
+@media(max-width:400px) { .currently-cover { height:170px; padding:9px; } }
+@media(min-width:1101px) {
+  .hero { grid-template-columns:minmax(0,1fr) 320px; column-gap:28px; }
+  .currently { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+  .currently-card { padding:12px; }
+  .currently-cover { height:155px; padding:8px; }
+  .currently-card h2 { font-size:15px; }
+}
