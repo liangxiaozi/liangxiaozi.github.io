@@ -12,9 +12,9 @@
     const english = language === 'en';
     root.dataset.language = english ? 'en' : 'zh';
     root.lang = english ? 'en' : 'zh-CN';
-    languageButton.innerHTML = `${english ? '中文' : 'EN'} <span>↗</span>`;
+    languageButton.innerHTML = `${english ? '中文 / EN' : 'EN / 中文'}`;
     languageButton.setAttribute('aria-label', english ? '切换为中文' : 'Switch to English');
-    document.title = english ? 'Xiao Liang | AI Industry · Strategy · International Cooperation' : '梁潇 Xiao Liang | AI 产业 · 战略研究 · 国际合作';
+    document.title = english ? 'Xiao Liang | Personal Homepage' : '梁潇 Xiao Liang | Personal Homepage';
     announceResults();
   }
   try { setLanguage(localStorage.getItem('xiao-language') || 'zh'); } catch { setLanguage('zh'); }
