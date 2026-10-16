@@ -144,3 +144,23 @@ footer p>span { margin:0 5px; }
   .currently-cover { height:155px; padding:8px; }
   .currently-card h2 { font-size:15px; }
 }
+
+/* Personal notes: a photo, policy work, and life beyond research. */
+.about-notes { margin-top:27px; }
+.about-note { border-top:1px dotted #cdd3db; padding:23px 0; }
+.about-note:last-child { padding-bottom:0; }
+.about-note h3 { font:19px/1.6 var(--serif); margin-bottom:10px; }
+.about-note p:not(.note-label) { font-size:13px; line-height:2; }
+.about-note cite { font-family:var(--serif); }
+.about-chicago { display:grid; grid-template-columns:minmax(0,1fr) minmax(210px,.85fr); gap:18px 30px; align-items:start; }
+.about-note figure { margin:0; }
+.advisor-photo img { display:block; width:100%; height:auto; border:1px solid var(--line); }
+.about-note figcaption { font-size:10px; line-height:1.8; color:var(--muted); margin-top:8px; }
+.nobel-note { grid-column:1 / -1; margin-top:0; }
+.nobel-note summary { font-size:11px; }
+.nobel-note summary::before { content:'+'; font:14px var(--mono); }
+.nobel-note[open] summary::before { content:'−'; }
+.nobel-note figure { margin-top:15px; max-width:390px; }
+.nobel-note img { width:100%; height:auto; display:block; }
+.about-off-duty .football-aside { font:10px/1.8 var(--mono); color:var(--blue); margin-top:12px; }
+@media(max-width:750px) { .about-chicago { grid-template-columns:1fr; gap:18px; } .advisor-photo { max-width:480px; } }
