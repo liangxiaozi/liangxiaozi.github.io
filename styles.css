@@ -166,9 +166,6 @@ footer p>span { margin:0 5px; }
 @media(max-width:750px) { .about-chicago { grid-template-columns:1fr; gap:18px; } .advisor-photo { max-width:480px; } }
 
 /* Two reading depths: concise framing, then an inspectable line of reasoning. */
-.reading-guide { margin-bottom:21px; padding:14px 17px; border-left:2px solid #8dabd8; background:#f1f4f8; }
-.reading-guide>p:not(.note-label) { font-size:12px; line-height:1.9; }
-.reading-guide>p+p { margin-top:5px; }
 .project-content>.project-question { color:var(--ink); font-size:14px; margin-bottom:6px; }
 .project-content>.project-takeaway { font-size:12px; color:#536277; }
 .case-reasoning { margin-bottom:0; }
@@ -179,3 +176,18 @@ footer p>span { margin:0 5px; }
 .case-index { display:block; font:9px/1.8 var(--mono); color:#8390a0; }
 .case-step dd { margin:0; color:var(--muted); font-size:12px; line-height:1.9; }
 @media(max-width:650px) { .case-step { grid-template-columns:1fr; gap:5px; } .case-index { display:inline; margin-right:8px; } }
+
+/* Project framing at left, visible reasoning at right. */
+.project { grid-template-columns:30px minmax(0,.8fr) minmax(0,1.2fr); gap:20px; padding:30px 0; align-items:start; }
+.project>.case-reasoning { margin:0; padding-left:20px; border-left:1px solid #b8c9df; }
+.case-step { grid-template-columns:75px minmax(0,1fr); gap:12px; }
+.thesis-note { grid-column:1 / -1; margin-top:0; max-width:720px; }
+.thesis-note h4 { font:16px/1.7 var(--serif); margin-bottom:11px; }
+.thesis-note p+p { margin-top:12px; }
+.thesis-note .thesis-ai { color:#365b8a; border-left:2px solid #8dabd8; padding-left:13px; }
+@media(max-width:950px) { .project { grid-template-columns:24px minmax(0,.8fr) minmax(0,1.2fr); gap:12px; } .project>.case-reasoning { padding-left:14px; } .case-step { grid-template-columns:1fr; gap:4px; } .case-index { display:inline; margin-right:8px; } }
+@media(max-width:700px) { .project { grid-template-columns:24px minmax(0,1fr); gap:12px; } .project>.case-reasoning { grid-column:2; margin-top:8px; } }
+
+.personal-highlight { color:var(--blue); font-weight:600; background:linear-gradient(transparent 68%,#e4ecf8 68%); padding-bottom:2px; }
+.scholes-moment { margin:22px 0 0; max-width:620px; }
+.scholes-moment img { width:100%; height:auto; display:block; border:1px solid var(--line); }
