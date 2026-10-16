@@ -22,8 +22,7 @@ h3 { font-weight:600; line-height:1.65; }
 .site-header { position:sticky; top:55px; align-self:start; grid-row:1/3; }
 .brand { display:flex; align-items:center; gap:16px; color:var(--ink); font-family:var(--serif); font-size:23px; line-height:1.5; }
 .brand:hover { text-decoration:none; }
-.site-symbol { font:italic 55px/1 Georgia,serif; color:var(--blue); align-self:start; }
-.site-symbol>span { color:var(--ink); }
+.site-symbol { font:normal 55px/1 'Apple Symbols','Segoe UI Symbol','Noto Sans Symbols',sans-serif; color:var(--blue); align-self:start; }
 .name-en { font-size:16px; }
 .sidebar-note { margin:23px 0 25px; font-size:12px; }
 nav { display:flex; flex-direction:column; gap:12px; border-top:1px solid var(--line); padding-top:22px; }
