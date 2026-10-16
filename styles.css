@@ -158,6 +158,7 @@ footer p>span { margin:0 5px; }
 .about-note figcaption { font-size:10px; line-height:1.8; color:var(--muted); margin-top:8px; }
 .nobel-note { grid-column:1 / -1; margin-top:0; }
 .nobel-note summary { font-size:11px; }
+.nobel-note summary>span:last-child { font:inherit; transform:none; }
 .nobel-note summary::before { content:'+'; font:14px var(--mono); }
 .nobel-note[open] summary::before { content:'−'; }
 .nobel-note figure { margin-top:15px; max-width:390px; }
