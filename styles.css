@@ -164,3 +164,18 @@ footer p>span { margin:0 5px; }
 .nobel-note img { width:100%; height:auto; display:block; }
 .about-off-duty .football-aside { font:10px/1.8 var(--mono); color:var(--blue); margin-top:12px; }
 @media(max-width:750px) { .about-chicago { grid-template-columns:1fr; gap:18px; } .advisor-photo { max-width:480px; } }
+
+/* Two reading depths: concise framing, then an inspectable line of reasoning. */
+.reading-guide { margin-bottom:21px; padding:14px 17px; border-left:2px solid #8dabd8; background:#f1f4f8; }
+.reading-guide>p:not(.note-label) { font-size:12px; line-height:1.9; }
+.reading-guide>p+p { margin-top:5px; }
+.project-content>.project-question { color:var(--ink); font-size:14px; margin-bottom:6px; }
+.project-content>.project-takeaway { font-size:12px; color:#536277; }
+.case-reasoning { margin-bottom:0; }
+.case-step { display:grid; grid-template-columns:110px minmax(0,1fr); gap:15px; padding:12px 0; border-bottom:1px dotted var(--line); }
+.case-step:first-child { padding-top:0; }
+.case-step:last-child { border-bottom:0; padding-bottom:0; }
+.case-step dt { color:var(--blue); font-size:11px; line-height:1.9; }
+.case-index { display:block; font:9px/1.8 var(--mono); color:#8390a0; }
+.case-step dd { margin:0; color:var(--muted); font-size:12px; line-height:1.9; }
+@media(max-width:650px) { .case-step { grid-template-columns:1fr; gap:5px; } .case-index { display:inline; margin-right:8px; } }
