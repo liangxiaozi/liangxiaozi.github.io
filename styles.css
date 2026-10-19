@@ -191,3 +191,7 @@ footer p>span { margin:0 5px; }
 .personal-highlight { color:var(--blue); font-weight:600; background:linear-gradient(transparent 68%,#e4ecf8 68%); padding-bottom:2px; }
 .scholes-moment { margin:22px 0 0; max-width:620px; }
 .scholes-moment img { width:100%; height:auto; display:block; border:1px solid var(--line); }
+
+/* A compact square portrait beside the bilingual name. */
+.site-avatar { display:block; width:64px; height:64px; flex:0 0 64px; object-fit:cover; border-radius:6px; border:1px solid var(--line); align-self:start; }
+@media(max-width:650px) { .site-avatar { width:42px; height:42px; flex-basis:42px; border-radius:4px; } }

@@ -13,3 +13,6 @@ Retrieved 2026-10-15 for identification in the personal reading and gaming cards
 - `scholes-barcelona-2008.jpg`: Mike Egerton / EMPICS Sport, via FourFourTwo, “The Greatest Goal I Ever Saw… Paul Scholes vs Barcelona, 2008”. Existing editorial photograph; rights remain with the photographer/agency.
 - Source: https://www.fourfourtwo.com/features/greatest-goal-ever-saw-paul-scholes-vs-barcelona-2008
 - Image: https://cdn.mos.cms.futurecdn.net/d3WoH9ia86SbJKjCfTjb25.jpg
+
+## Personal avatar
+- `avatar.jpg`: cropped from the user-supplied `/Applications/壁纸/102909.jpg`; square composition retaining the profile and pipe.
