@@ -16,3 +16,8 @@ Retrieved 2026-10-15 for identification in the personal reading and gaming cards
 
 ## Personal avatar
 - `avatar.jpg`: cropped from the user-supplied `/Applications/壁纸/102909.jpg`; square composition retaining the profile and pipe.
+
+## UN Security Council
+- `un-security-council.jpg`: user-supplied screenshot of their attendance, UN Web TV. Original image preserved.
+- Official recording: https://media.un.org/avlibrary/en/asset/d329/d3294564
+- UN Audiovisual Library title: Maintenance of International Peace and Security (Security Sector Reform) - Security Council, 9285th Meeting.
