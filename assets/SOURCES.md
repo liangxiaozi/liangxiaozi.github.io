@@ -21,3 +21,5 @@ Retrieved 2026-10-15 for identification in the personal reading and gaming cards
 - `un-security-council.jpg`: user-supplied screenshot of their attendance, UN Web TV. Original image preserved.
 - Official recording: https://media.un.org/avlibrary/en/asset/d329/d3294564
 - UN Audiovisual Library title: Maintenance of International Peace and Security (Security Sector Reform) - Security Council, 9285th Meeting.
+
+- `un-security-council-cropped.jpg`: cropped from the original screenshot to remove player controls and black bars; UN watermark retained.
