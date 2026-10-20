@@ -28,3 +28,6 @@ Retrieved 2026-10-15 for identification in the personal reading and gaming cards
 - `who-eoc-framework-cover.jpg`: official cover thumbnail from WHO IRIS, second edition.
 - Publication: https://iris.who.int/handle/10665/387896
 - Cover: https://iris.who.int/server/api/core/bitstreams/b34c9357-9d71-412d-9e6c-e1a3fb4b055c/content
+
+## Analytical Politics teaching
+- `analytical-politics-teaching.jpg`: user-supplied classroom photo, identified by the user as their Analytical Politics teaching assistant experience. Cropped to retain the instructor and whiteboard.

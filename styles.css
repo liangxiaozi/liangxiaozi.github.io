@@ -206,3 +206,8 @@ footer p>span { margin:0 5px; }
 .who-publication h4 { font:16px/1.6 var(--serif); margin:8px 0; color:var(--ink); }
 .who-publication figcaption>a { display:inline-block; margin-top:12px; font-size:11px; }
 @media(max-width:450px) { .about-note .who-publication { gap:16px; padding:15px; } .who-cover { flex-basis:95px; } .who-cover img { width:95px; } .who-publication h4 { font-size:14px; } }
+
+.teaching-note { grid-column:1 / -1; max-width:720px; border-top:1px dotted var(--line); padding-top:22px; }
+.teaching-note h4 { font:18px/1.6 var(--serif); margin:8px 0 10px; }
+.teaching-note figure { margin-top:18px; max-width:620px; }
+.teaching-note img { display:block; width:100%; height:auto; border:1px solid var(--line); }
