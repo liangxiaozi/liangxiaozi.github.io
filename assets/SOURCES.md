@@ -23,3 +23,8 @@ Retrieved 2026-10-15 for identification in the personal reading and gaming cards
 - UN Audiovisual Library title: Maintenance of International Peace and Security (Security Sector Reform) - Security Council, 9285th Meeting.
 
 - `un-security-council-cropped.jpg`: cropped from the original screenshot to remove player controls and black bars; UN watermark retained.
+
+## WHO framework cover
+- `who-eoc-framework-cover.jpg`: official cover thumbnail from WHO IRIS, second edition.
+- Publication: https://iris.who.int/handle/10665/387896
+- Cover: https://iris.who.int/server/api/core/bitstreams/b34c9357-9d71-412d-9e6c-e1a3fb4b055c/content

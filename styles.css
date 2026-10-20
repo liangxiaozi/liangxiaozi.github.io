@@ -198,3 +198,11 @@ footer p>span { margin:0 5px; }
 
 .about-note .un-moment { margin:22px 0 0; max-width:560px; }
 .un-moment img { display:block; width:100%; height:auto; border:1px solid var(--line); }
+
+.about-note .who-publication { display:flex; align-items:center; gap:24px; margin:24px 0; padding:20px; border:1px solid var(--line); max-width:560px; background:#f1f4f8; }
+.who-cover { flex:0 0 125px; }
+.who-cover img { display:block; width:125px; height:auto; box-shadow:2px 4px 10px #19385a1a; }
+.who-publication figcaption { margin:0; min-width:0; }
+.who-publication h4 { font:16px/1.6 var(--serif); margin:8px 0; color:var(--ink); }
+.who-publication figcaption>a { display:inline-block; margin-top:12px; font-size:11px; }
+@media(max-width:450px) { .about-note .who-publication { gap:16px; padding:15px; } .who-cover { flex-basis:95px; } .who-cover img { width:95px; } .who-publication h4 { font-size:14px; } }
