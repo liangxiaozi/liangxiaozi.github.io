@@ -189,8 +189,10 @@ footer p>span { margin:0 5px; }
 @media(max-width:700px) { .project { grid-template-columns:24px minmax(0,1fr); gap:12px; } .project>.case-reasoning { grid-column:2; margin-top:8px; } }
 
 .personal-highlight { color:var(--blue); font-weight:600; background:linear-gradient(transparent 68%,#e4ecf8 68%); padding-bottom:2px; }
-.scholes-moment { margin:22px 0 0; max-width:620px; }
-.scholes-moment img { width:100%; height:auto; display:block; border:1px solid var(--line); }
+.football-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin-top:22px; align-items:start; }
+.football-gallery figure { min-width:0; }
+.football-gallery img { display:block; width:100%; height:auto; aspect-ratio:3 / 2; object-fit:cover; border:1px solid var(--line); }
+@media(max-width:600px) { .football-gallery { grid-template-columns:minmax(0,1fr); gap:22px; } }
 
 /* A compact square portrait beside the bilingual name. */
 .site-avatar { display:block; width:64px; height:64px; flex:0 0 64px; object-fit:cover; border-radius:6px; border:1px solid var(--line); align-self:start; }

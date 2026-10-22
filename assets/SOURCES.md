@@ -31,3 +31,6 @@ Retrieved 2026-10-15 for identification in the personal reading and gaming cards
 
 ## Analytical Politics teaching
 - `analytical-politics-teaching.jpg`: user-supplied classroom photo, identified by the user as their Analytical Politics teaching assistant experience. Cropped to retain the instructor and whiteboard.
+
+## UChicago football
+- uchicago-football.jpg: user-supplied personal match photo, captioned “芝大华足” as requested; original composition preserved.
