@@ -220,13 +220,21 @@ footer p>span { margin:0 5px; }
 .teaching-note figcaption { margin-top:8px; font-size:10px; line-height:1.8; color:var(--muted); }
 @media(max-width:700px) { .foundation-grid { grid-template-columns:minmax(0,1fr); } }
 
-/* Keep the publication and consultation together; preserve the full group photo. */
-.who-evidence { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:24px; align-items:start; margin:24px 0; }
-.who-evidence>.who-publication { margin:0; max-width:none; gap:16px; padding:16px; }
-.who-evidence .who-cover { flex-basis:95px; }
-.who-evidence .who-cover img { width:95px; }
-.who-evidence .who-publication h4 { font-size:14px; }
-.who-consultation { min-width:0; }
-.who-consultation img { display:block; width:100%; height:auto; border:1px solid var(--line); }
-.who-consultation a { display:block; }
-@media(max-width:900px) { .who-evidence { grid-template-columns:minmax(0,1fr); } .who-evidence>.who-publication { max-width:560px; } }
+/* Publication first, followed by two equally sized field-photo frames. */
+.about-note .who-publication { max-width:none; margin:24px 0; padding:18px 22px; gap:22px; background:transparent; border:0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.who-cover { flex-basis:76px; }
+.who-cover img { width:76px; }
+.who-publication h4 { margin:4px 0; }
+.who-publication figcaption>a { margin-top:8px; }
+.policy-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; }
+.policy-gallery>figure { min-width:0; margin:0; max-width:none; }
+.policy-gallery>figure>a { display:flex; aspect-ratio:3 / 2; align-items:center; justify-content:center; background:#eef1f4; border:1px solid var(--line); }
+.policy-gallery img { display:block; width:100%; height:100%; object-fit:contain; border:0; }
+.policy-gallery figcaption { margin-top:10px; }
+@media(max-width:650px) {
+ .policy-gallery { grid-template-columns:minmax(0,1fr); gap:24px; }
+ .about-note .who-publication { padding:16px 0; gap:16px; }
+ .who-cover { flex-basis:65px; }
+ .who-cover img { width:65px; }
+ .who-publication h4 { font-size:14px; }
+}
