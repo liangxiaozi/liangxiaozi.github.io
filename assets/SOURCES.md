@@ -34,3 +34,6 @@ Retrieved 2026-10-15 for identification in the personal reading and gaming cards
 
 ## UChicago football
 - uchicago-football.jpg: user-supplied personal match photo, captioned “芝大华足” as requested; original composition preserved.
+
+## WHO global consultation, 2026
+- who-global-consultation-2026.jpg: user-supplied photo of their participation in the WHO Global Consultation on Strengthening EOC-NET and EOC Capacities, 28–29 October 2026, Istanbul, Türkiye. Full image retained, including the event information.
